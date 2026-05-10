@@ -2,6 +2,21 @@
 
 A production-ready SaaS platform for managing compliance certifications, frameworks, and renewals with enterprise-grade security and premium UX.
 
+## 🚀 Quick Start
+
+Get up and running in 60 seconds:
+
+```bash
+git clone https://github.com/irfan534/tracker1
+cd tracker1
+./setup.sh
+```
+
+Then open **http://localhost:3000**
+Login: **admin@tracker.local** / **Admin@123456**
+
+---
+
 ## 🎯 Overview
 
 Tracker is a comprehensive compliance management system designed for enterprises to:

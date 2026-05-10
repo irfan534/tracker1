@@ -1,12 +1,16 @@
 import { Injectable } from '@nestjs/common';
+import { PrismaService } from './common/prisma/prisma.service';
 
 @Injectable()
 export class AppService {
-  getHealth() {
+  constructor(private prisma: PrismaService) {}
+
+  async getHealth() {
+    const isDbConnected = await this.prisma.isConnected();
     return {
-      status: 'healthy',
-      timestamp: new Date(),
-      version: '1.0.0',
+      status: 'ok',
+      uptime: process.uptime(),
+      db: isDbConnected ? 'connected' : 'disconnected',
     };
   }
 
