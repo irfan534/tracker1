@@ -1,3 +1,4 @@
+# Recommend using BuildKit for faster builds: DOCKER_BUILDKIT=1 docker-compose up --build
 version: '3.8'
 
 services:
